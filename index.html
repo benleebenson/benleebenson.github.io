@@ -10,8 +10,8 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #F9F6F2;
-            color: #333;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: #fff;
             text-align: center;
         }
         header {
@@ -21,7 +21,6 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: white;
         }
         .container {
             width: 80%;
@@ -56,13 +55,26 @@
             bottom: 0;
             width: 100%;
             font-size: 14px;
-            color: white;
+        }
+        .flashy-text {
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 0 0 10px #fff, 0 0 20px #ffcc00, 0 0 30px #ff6600;
+            animation: glow 1.5s infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #ffcc00, 0 0 30px #ff6600;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ffcc00, 0 0 40px #ff6600;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Ben Benson's Portfolio</h1>
+        <h1 class="flashy-text">Ben Benson's Portfolio</h1>
         <p>Showcasing my work and projects</p>
     </header>
     
@@ -95,6 +107,3 @@
 </body>
 </html>
 
-    <footer>&copy; 2025 Ben Benson</footer>
-</body>
-</html>
