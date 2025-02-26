@@ -3,91 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ben Benson</title>
+    <title>Ben Benson's Portfolio</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #FAF8F6;
+            background-color: #F9F6F2;
             color: #333;
             text-align: center;
         }
         header {
-            padding: 50px 0;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
             font-size: 24px;
-            font-weight: bold;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 15px;
-            font-size: 18px;
-        }
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 600;
-            padding: 10px 15px;
-            transition: 0.3s;
-        }
-        nav a:hover {
-            color: #0077cc;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: white;
         }
         .container {
-            max-width: 900px;
+            width: 80%;
             margin: auto;
+            overflow: hidden;
+        }
+        .project {
+            background: rgba(255, 255, 255, 0.1);
             padding: 20px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
         }
-        .profile img {
-            width: 180px;
-            border-radius: 50%;
-            margin-bottom: 20px;
+        .project:hover {
+            transform: scale(1.05);
         }
-        .section {
-            padding: 50px 0;
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project a:hover {
+            text-decoration: underline;
         }
         footer {
-            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
             font-size: 14px;
-            color: #666;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <header>Ben Benson</header>
-    
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <header>
+        <h1>Ben Benson's Portfolio</h1>
+        <p>Showcasing my work and projects</p>
+    </header>
     
     <div class="container">
-        <section id="about" class="section">
-            <div class="profile">
-                <img src="images/profile.jpg" alt="Ben Benson">
-                <p>Welcome to my minimalist portfolio. I create, develop, and innovate.</p>
-            </div>
-        </section>
+        <h2>My Projects</h2>
         
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <nav>
-                <a href="#gr">G & R</a>
-                <a href="#bbtv">BBTV Podcast</a>
-                <a href="#csc">Contemplative Sciences Center</a>
-            </nav>
-        </section>
+        <div class="project">
+            <h3>G & R: Game & Restaurant Training Software</h3>
+            <p>A gamified employee training solution for fast-casual restaurants, designed to enhance efficiency and engagement.</p>
+            <p><strong>Team Members:</strong> Jinge Zhou, Ben Benson, AJ Nye, Eric Weng</p>
+            <a href="#">Learn More</a>
+        </div>
         
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:blb4dm@virginia.edu">blb4dm@virginia.edu</a></p>
-        </section>
+        <div class="project">
+            <h3>BBTV Podcast</h3>
+            <p>A podcast where I discuss topics on business, technology, and contemporary issues. Available on Spotify.</p>
+            <a href="https://open.spotify.com/show/YOURPODCASTLINK" target="_blank">Listen on Spotify</a>
+        </div>
+        
+        <div class="project">
+            <h3>Contemplative Sciences Center</h3>
+            <p>Currently working on developing the pricing model for the new Contemplative Commons building at UVA’s Contemplative Sciences Center.</p>
+            <a href="https://csc.virginia.edu/" target="_blank">Visit CSC</a>
+        </div>
     </div>
     
+    <footer>
+        <p>&copy; 2025 Ben Benson | Contact: blb4dm@virginia.edu</p>
+    </footer>
+</body>
+</html>
+
     <footer>&copy; 2025 Ben Benson</footer>
 </body>
 </html>
