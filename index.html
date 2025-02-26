@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben Benson's Portfolio</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: #fff;
+            text-align: center;
         }
         header {
-            background-color: #0077cc;
-            color: white;
+            background: rgba(0, 0, 0, 0.7);
             padding: 20px;
-            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
         .container {
             width: 80%;
@@ -24,16 +28,20 @@
             overflow: hidden;
         }
         .project {
-            background: white;
+            background: rgba(255, 255, 255, 0.1);
             padding: 20px;
             margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.05);
         }
         .project a {
             display: inline-block;
             margin-top: 10px;
-            color: #0077cc;
+            color: #ffcc00;
             text-decoration: none;
             font-weight: bold;
         }
@@ -41,19 +49,32 @@
             text-decoration: underline;
         }
         footer {
-            background-color: #0077cc;
-            color: white;
-            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
             padding: 10px;
             position: fixed;
             bottom: 0;
             width: 100%;
+            font-size: 14px;
+        }
+        .flashy-text {
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 0 0 10px #fff, 0 0 20px #ffcc00, 0 0 30px #ff6600;
+            animation: glow 1.5s infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #ffcc00, 0 0 30px #ff6600;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ffcc00, 0 0 40px #ff6600;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Ben Benson's Portfolio</h1>
+        <h1 class="flashy-text">Ben Benson's Portfolio</h1>
         <p>Showcasing my work and projects</p>
     </header>
     
@@ -62,7 +83,7 @@
         
         <div class="project">
             <h3>G & R: Game & Restaurant Training Software</h3>
-            <p>A gamified employee training solution for fast-casual restaurants, designed to enhance efficiency and engagement. Developed in Unity with realistic simulations to streamline training.</p>
+            <p>A gamified employee training solution for fast-casual restaurants, designed to enhance efficiency and engagement.</p>
             <p><strong>Team Members:</strong> Jinge Zhou, Ben Benson, AJ Nye, Eric Weng</p>
             <a href="#">Learn More</a>
         </div>
